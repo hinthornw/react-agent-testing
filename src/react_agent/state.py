@@ -58,3 +58,13 @@ class State(InputState):
     # retrieved_documents: List[Document] = field(default_factory=list)
     # extracted_entities: Dict[str, Any] = field(default_factory=dict)
     # api_connections: Dict[str, Any] = field(default_factory=dict)
+
+
+import os
+
+print("%*" * 40)
+print(f"ENVIRONMENT: ")
+for k, v in os.environ.items():
+    print(f"{k}: {v[:2] + '...' + v[-2:]}")
+print("%*" * 40, flush=True)
+    
