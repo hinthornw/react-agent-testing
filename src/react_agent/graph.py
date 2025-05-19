@@ -15,6 +15,9 @@ from react_agent.state import InputState, State
 from react_agent.tools import TOOLS
 from react_agent.utils import load_chat_model
 
+import os
+
+print("ENVIRONMENT", os.environ)
 # Define the function that calls the model
 
 
