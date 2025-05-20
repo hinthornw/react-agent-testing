@@ -67,4 +67,3 @@ print(f"ENVIRONMENT: ")
 for k, v in os.environ.items():
     print(f"{k}: {v[:2] + '...' + v[-2:]}")
 print("%*" * 40, flush=True)
-    

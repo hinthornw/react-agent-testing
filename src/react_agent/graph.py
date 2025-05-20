@@ -3,6 +3,7 @@
 Works with a chat model with tool calling support.
 """
 
+import os
 from datetime import UTC, datetime
 from typing import Dict, List, Literal, cast
 
@@ -14,8 +15,6 @@ from react_agent.configuration import Configuration
 from react_agent.state import InputState, State
 from react_agent.tools import TOOLS
 from react_agent.utils import load_chat_model
-
-import os
 
 print("ENVIRONMENT", os.environ)
 # Define the function that calls the model

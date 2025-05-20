@@ -1,5 +1,6 @@
 {
-  "dependencies": [".", ".env"],
+  "dependencies": ["."], 
+  "dockerfile_lines": ["ADD .env ."],
   "graphs": {
     "agent": "./src/react_agent/graph.py:graph"
   },
