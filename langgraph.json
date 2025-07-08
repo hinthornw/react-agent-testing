@@ -1,6 +1,6 @@
 {
   "dependencies": ["."], 
-  "dockerfile_lines": ["ADD .env ."],
+  "keep_pkg_tools": ["pip"],
   "graphs": {
     "agent": "./src/react_agent/graph.py:graph"
   },
