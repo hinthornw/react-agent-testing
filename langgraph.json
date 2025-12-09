@@ -1,7 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/libs/cli/schemas/version.schema.json",
+  "$schema": "http://langgra.ph/schema.json",
   "dependencies": ["."], 
   "api_version": "0.2.136",
+  "webhooks": {
+    "headers": {
+      "x-foo": "bar",
+      "x-baz": "${{ env.LG_WEBHOOK_FOO_BAR }}"
+    }
+  },
   "keep_pkg_tools": ["pip"],
   "graphs": {
     "agent": "./src/react_agent/graph.py:graph"
