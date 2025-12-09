@@ -8,12 +8,11 @@ consider implementing more robust and specialized tools tailored to your needs.
 
 from typing import Any, Callable, List, Optional, cast
 
-from langchain_tavily import TavilySearch  # type: ignore[import-not-found]
 
 from react_agent.configuration import Configuration
 
 
-async def search(query: str) -> Optional[dict[str, Any]]:
+async def search(query: str) -> Optional[str]:
     """Search for general web results.
 
     This function performs a search using the Tavily search engine, which is designed
@@ -21,8 +20,7 @@ async def search(query: str) -> Optional[dict[str, Any]]:
     for answering questions about current events.
     """
     configuration = Configuration.from_context()
-    wrapped = TavilySearch(max_results=configuration.max_search_results)
-    return cast(dict[str, Any], await wrapped.ainvoke({"query": query}))
+    return "This is a placeholder tool"
 
 
 TOOLS: List[Callable[..., Any]] = [search]

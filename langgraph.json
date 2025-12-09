@@ -1,7 +1,6 @@
 {
   "$schema": "http://langgra.ph/schema.json",
   "dependencies": ["."], 
-  "api_version": "0.2.136",
   "webhooks": {
     "headers": {
       "x-foo": "bar",
