@@ -1,12 +1,6 @@
 {
   "$schema": "http://langgra.ph/schema.json",
   "dependencies": ["."], 
-  "webhooks": {
-    "headers": {
-      "x-foo": "bar",
-      "x-baz": "${{ env.LG_WEBHOOK_FOO_BAR }}"
-    }
-  },
   "keep_pkg_tools": ["pip"],
   "graphs": {
     "agent": "./src/react_agent/graph.py:graph"
