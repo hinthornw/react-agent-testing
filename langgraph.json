@@ -8,7 +8,6 @@
       "strategy": "keep_latest"
     }
   },
-  "api_version": "0.7.15",
   "graphs": {
     "agent": "./src/react_agent/graph.py:graph"
   },
